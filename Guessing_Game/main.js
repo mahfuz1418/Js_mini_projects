@@ -10,7 +10,11 @@ const checkButton = form.querySelector("#Check");
 const resultText = cardBody.querySelector(".result-text");
 const reminingAttempts = cardBody.querySelector(".reminingAttempts");
 const wonLostMsg = document.createElement("p");
+const reload = document.querySelector(".reload-btn");
 
+reload.addEventListener("click", function (e) {
+    location.reload();
+})
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
